@@ -82,26 +82,28 @@
     <img src="./assets/icons/arrow-top.png" class="iconArrow" alt="Retour haut"/>
   </button>
 
-  <footer class="footer">
-    <div class="footer-content">
-      <a href="home.html">
-        <img class="footer-logo" src="./assets/icons/logo.png" alt="Chill Games Logo"/>
-      </a>
-      <p>© 2025 Chill Games. Tous les droits sont réservés.</p>
+  <footer class ="footer">
+  <div class="footer-content">
+    
+    <div style="flex:1; min-width:250px; margin-bottom:20px;">
+      <h4>Mentions légales</h4>
+      <p>Responsable de publication : Hugo Paulier</p>
     </div>
-  </footer>
 
-  <script>
-    const reveals = document.querySelectorAll('.reveal');
-    const onScroll = () => {
-      reveals.forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) el.classList.add('show');
-      });
-    };
-    window.addEventListener('scroll', onScroll);
-    onScroll();
-    document.querySelector('.btop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-  </script>
+    <div style="flex:1; min-width:250px; margin-bottom:20px;">
+      <h4>Contact</h4>
+      <p>Email : hugo.paulier@ynov.com</p>
+      <p>Adresse : 2 Rue de la Fourane, 13090 Aix-en-Provence</p>
+    </div>
+
+    <div style="flex:1; min-width:250px; margin-bottom:20px;">
+      <h4>Copyright</h4>
+      <p>&copy; 2025 Chill Games. Tous droits réservés.</p>
+      <p>Design & développement : Hugo Paulier</p>
+    </div>
+
+  </div>
+</footer>
+
 </body>
 </html>

@@ -7,22 +7,20 @@
   <link rel="stylesheet" href="main.css"/>
   <link rel="stylesheet" href="../assets/css/sousmenu.css"/>
   <link rel="stylesheet" href="../assets/css/main.css"/>
-
+</head>
 <body>
-
   <header class="header">
     <div class="left">
       <a href="../home.html">
         <img class="logo" src="../assets/icons/logo.png" alt="logo Chill Games"/>
       </a>
     </div>
-
     <nav class="nav-links">
       <ul>
         <li class="has-submenu">
-          <a href="page/games.html">GAMES</a>
+          <a href="../page/games.html">GAMES</a>
           <div class="sub-menu-games">
-            <a href="jeux/underworld.html">UNDERWORLD</a>
+            <a href="../jeux/underworld.html">UNDERWORLD</a>
             <a href="#">ONESWORD</a>
             <a href="#">?????</a>
           </div>
@@ -32,7 +30,7 @@
           <div class="sub-menu-games">
             <a href="#">Actualités</a>
             <a href="#">Patch</a>
-            <a href="pagecommu/commu.html">Communauté</a>
+            <a href="../pagecommu/commu.html">Communauté</a>
           </div>
         </li>
         <li class="has-submenu">
@@ -45,31 +43,49 @@
         </li>
       </ul>
     </nav>
-
     <div class="user-icon">
       <a href="../pagelogin/login.html">
         <img class="iconConnection" src="../assets/icons/user.png" alt="Connexion"/>
       </a>
     </div>
   </header>
-
+  
   <section class="comment-section">
-    <h2>Donne ton avis 💬</h2>
-    <form id="formulaire-commentaire">
-      <input type="text" id="nom" placeholder="Ton nom" required>
-      <textarea id="message" placeholder="Ton commentaire" required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-    <div id="commentaires"></div>
-  </section>
+  <h2>💬 Vos avis</h2>
 
 
-  <footer>
-    <a href="../home.html">
-      <img src="../assets/icons/logo.png" alt="Chill Games Logo"/>
-    </a>
-    <p>© 2025 Chill Games. Tous droits réservés.</p>
+  <form id="formulaire-commentaire">
+    <input type="text" id="nom" placeholder="Votre nom" required/>
+    <textarea id="message" placeholder="Votre message" required></textarea>
+    <button type="submit">Envoyer</button>
+  </form>
+
+
+  <div id="commentaires"></div>
+</section>
+
+  <footer class ="footer">
+  <div class="footer-content">
+    
+    <div style="flex:1; min-width:250px; margin-bottom:20px;">
+      <h4>Mentions légales</h4>
+      <p>Responsable de publication : Hugo Paulier</p>
+    </div>
+
+    <div style="flex:1; min-width:250px; margin-bottom:20px;">
+      <h4>Contact</h4>
+      <p>Email : hugo.paulier@ynov.com</p>
+      <p>Adresse : 2 Rue de la Fourane, 13090 Aix-en-Provence</p>
+    </div>
+
+    <div style="flex:1; min-width:250px; margin-bottom:20px;">
+      <h4>Copyright</h4>
+      <p>&copy; 2025 Chill Games. Tous droits réservés.</p>
+      <p>Design & développement : Hugo Paulier</p>
+    </div>
+
+  </div>
   </footer>
-    <script src="code.js"></script>
+  <script src="code.js"></script>
 </body>
 </html>
