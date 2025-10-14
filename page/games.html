@@ -1,75 +1,100 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CHILL GAMES</title>
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/sousmenu.css">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CHILL GAMES</title>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+  <link rel="stylesheet" href="../assets/css/sousmenu.css"/>
 </head>
 <body>
-    <header class="header">
-        <div class="left">
-            <a href="../home.html">
-                <img class="logo" src="../assets/icons/logo.png" alt="logo">
-            </a>
-        </div>
 
-        <nav class="nav-links">
-            <ul>
-                <li>
-                    <a href="games.html">GAMES</a>
-                    <div class="sub-menu-games">
-                        <a href="../jeux/underworld.html">UNDERWORLD</a>
-                        <a href="../jeux/onesword.html">ONESWORD</a>
-                        <a href="../jeux/games.html">?????</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="news.html">NEWS</a>
-                    <div class="sub-menu-games">
-                        <a href="actualites.html">Actualités</a>
-                        <a href="/">Patch</a>
-                        <a href="/">Communauté</a>
-                    </div>
-                </li>
-                <li>
-                    <a href="support.html">SUPPORT</a>
-                    <div class="sub-menu-games">
-                        <a href="support.html">Support</a>
-                        <a href="Aide.html">Aide</a>
-                        <a href="contact.html">Contactez-nous</a>
-                    </div>
-                </li>
-            </ul>
-        </nav>
-
-        <nav>
-            <ul>
-                <li>
-                    <a href="../pagelogin/login.html">
-                        <img class="iconConnection" src="../assets/icons/user.png" alt="user">
-                    </a>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <script src="btop.js"></script>
-
-    <main class ="background1">
-        <h1 class = "title" >NOS JEUX</h1>
-        <p></p>
-        <p>UNDERWORLD</p>
-        <p></p>
-        </main>
-
-    <main class ="footer">
-    <div>
-        <p>© 2025 Chill Games. Tout les droits sont réservés.</p>
+  <header class="header">
+    <div class="left">
+      <a href="../home.html">
+        <img class="logo" src="../assets/icons/logo.png" alt="logo Chill Games"/>
+      </a>
     </div>
-    </main>
-    <div class="btop">
-        <img src="./assets/icons/arrow-top.png" class="iconArrow">
+
+    <nav class="nav-links">
+      <ul>
+        <li class="has-submenu">
+          <a href="page/games.html">GAMES</a>
+          <div class="sub-menu-games">
+            <a href="jeux/underworld.html">UNDERWORLD</a>
+            <a href="#">ONESWORD</a>
+            <a href="#">?????</a>
+          </div>
+        </li>
+        <li class="has-submenu">
+          <a href="#">NEWS</a>
+          <div class="sub-menu-games">
+            <a href="#">Actualités</a>
+            <a href="#">Patch</a>
+            <a href="pagecommu/commu.html">Communauté</a>
+          </div>
+        </li>
+        <li class="has-submenu">
+          <a href="#">SUPPORT</a>
+          <div class="sub-menu-games">
+            <a href="#">Support</a>
+            <a href="#">Aide</a>
+            <a href="#">Contactez-nous</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="user-icon">
+      <a href="../pagelogin/login.html">
+        <img class="iconConnection" src="../assets/icons/user.png" alt="Connexion"/>
+      </a>
     </div>
+  </header>
+
+
+  <main class="background1">
+    <section class="intro">
+      <h1 class="title">🎮 Nos Jeux</h1>
+      <p class="lead">Découvrez les univers créés par Chill Games. Chaque aventure est unique, immersive et pensée pour captiver les joueurs.</p>
+    </section>
+
+    <section class="games-list">
+      <div class="game-card">
+        <h2>UNDERWORLD</h2>
+        <p>Un RPG pixel sombre et captivant où chaque choix forge votre destin.</p>
+        <a href="../jeux/underworld.html" class="btn primary">Découvrir</a>
+      </div>
+
+      <div class="game-card">
+        <h2>ONESWORD</h2>
+        <p>Un jeu d’action rapide et stratégique où une seule arme décide de tout.</p>
+        <a href="../jeux/onesword.html" class="btn primary">Découvrir</a>
+      </div>
+
+      <div class="game-card">
+        <h2>?????</h2>
+        <p>Un nouveau projet mystérieux en préparation… restez connectés !</p>
+        <a href="../jeux/games.html" class="btn">En savoir plus</a>
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer-content">
+      <a href="../home.html">
+        <img class="footer-logo" src="../assets/icons/logo.png" alt="Chill Games Logo"/>
+      </a>
+      <p>© 2025 Chill Games. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+
+  <button class="btop">
+    <img src="../assets/icons/arrow-top.png" class="iconArrow" alt="Retour haut"/>
+  </button>
+
+  <script src="btop.js"></script>
 </body>
 </html>

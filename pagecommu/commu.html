@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CHILL GAMES - Communauté</title>
+  <link rel="stylesheet" href="main.css"/>
+  <link rel="stylesheet" href="../assets/css/sousmenu.css"/>
+  <link rel="stylesheet" href="../assets/css/main.css"/>
+
+<body>
+
+  <header class="header">
+    <div class="left">
+      <a href="../home.html">
+        <img class="logo" src="../assets/icons/logo.png" alt="logo Chill Games"/>
+      </a>
+    </div>
+
+    <nav class="nav-links">
+      <ul>
+        <li class="has-submenu">
+          <a href="page/games.html">GAMES</a>
+          <div class="sub-menu-games">
+            <a href="jeux/underworld.html">UNDERWORLD</a>
+            <a href="#">ONESWORD</a>
+            <a href="#">?????</a>
+          </div>
+        </li>
+        <li class="has-submenu">
+          <a href="#">NEWS</a>
+          <div class="sub-menu-games">
+            <a href="#">Actualités</a>
+            <a href="#">Patch</a>
+            <a href="pagecommu/commu.html">Communauté</a>
+          </div>
+        </li>
+        <li class="has-submenu">
+          <a href="#">SUPPORT</a>
+          <div class="sub-menu-games">
+            <a href="#">Support</a>
+            <a href="#">Aide</a>
+            <a href="#">Contactez-nous</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="user-icon">
+      <a href="../pagelogin/login.html">
+        <img class="iconConnection" src="../assets/icons/user.png" alt="Connexion"/>
+      </a>
+    </div>
+  </header>
+
+  <section class="comment-section">
+    <h2>Donne ton avis 💬</h2>
+    <form id="formulaire-commentaire">
+      <input type="text" id="nom" placeholder="Ton nom" required>
+      <textarea id="message" placeholder="Ton commentaire" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <div id="commentaires"></div>
+  </section>
+
+
+  <footer>
+    <a href="../home.html">
+      <img src="../assets/icons/logo.png" alt="Chill Games Logo"/>
+    </a>
+    <p>© 2025 Chill Games. Tous droits réservés.</p>
+  </footer>
+    <script src="code.js"></script>
+</body>
+</html>

@@ -14,34 +14,36 @@
         <img class="logo" src="../assets/icons/logo.png" alt="logo Chill Games"/>
       </a>
     </div>
+    
     <nav class="nav-links">
       <ul>
         <li class="has-submenu">
-          <a href="../page/games.html">GAMES</a>
+          <a href="page/games.html">GAMES</a>
           <div class="sub-menu-games">
-            <a href="underworld.html">UNDERWORLD</a>
-            <a href="onesword.html">ONESWORD</a>
-            <a href="games.html">?????</a>
+            <a href="jeux/underworld.html">UNDERWORLD</a>
+            <a href="#">ONESWORD</a>
+            <a href="#">?????</a>
           </div>
         </li>
         <li class="has-submenu">
-          <a href="../page/news.html">NEWS</a>
+          <a href="#">NEWS</a>
           <div class="sub-menu-games">
-            <a href="../page/actualites.html">Actualités</a>
+            <a href="#">Actualités</a>
             <a href="#">Patch</a>
-            <a href="#">Communauté</a>
+            <a href="pagecommu/commu.html">Communauté</a>
           </div>
         </li>
         <li class="has-submenu">
-          <a href="../page/support.html">SUPPORT</a>
+          <a href="#">SUPPORT</a>
           <div class="sub-menu-games">
-            <a href="../page/support.html">Support</a>
-            <a href="../page/Aide.html">Aide</a>
-            <a href="../page/contact.html">Contactez-nous</a>
+            <a href="#">Support</a>
+            <a href="#">Aide</a>
+            <a href="#">Contactez-nous</a>
           </div>
         </li>
       </ul>
     </nav>
+    
     <nav>
       <ul>
         <li>
@@ -53,10 +55,10 @@
     </nav>
   </header>
 
- 
   <section class="banner">
     <video autoplay muted loop playsinline class="banner-video">
       <source src="../assets/video/MenuVideo.mp4" type="video/mp4"/>
+      Votre navigateur ne supporte pas la vidéo.
     </video>
     <div class="banner-overlay">
       <h1 class="banner-title">UNDERWORLD</h1>
@@ -92,19 +94,27 @@
 
     <section class="features reveal">
       <h2 class="section-title">⚙️ Mécanismes de Jeu</h2>
-      <div class="feature-grid">
-        <div class="card">
-          <h3>Attaques</h3>
-          <p>Enchaînez des combos rapides, déclenchez des coups spéciaux et adaptez vos stratégies selon vos armes et vos ennemis.</p>
+      <div class="carousel-wrapper">
+        <button class="carousel-btn left">◀</button>
+        <div class="feature-carousel">
+          <div class="card">
+            <h3>Attaques</h3>
+            <p>Enchaînez des combos rapides, déclenchez des coups spéciaux et adaptez vos stratégies selon vos armes et vos ennemis.</p>
+          </div>
+          <div class="card">
+            <h3>Inventaire</h3>
+            <p>Gérez vos armes, armures et objets rares. Chaque choix d’équipement influence votre style de jeu et vos chances de survie.</p>
+          </div>
+          <div class="card">
+            <h3>Progression</h3>
+            <p>Améliorez vos compétences, débloquez des talents uniques et façonnez un héros qui évolue selon vos décisions.</p>
+          </div>
+          <div class="card">
+            <h3>Exploration</h3>
+            <p>Découvrez des zones secrètes, résolvez des énigmes et débloquez des passages cachés.</p>
+          </div>
         </div>
-        <div class="card">
-          <h3>Inventaire</h3>
-          <p>Gérez vos armes, armures et objets rares. Chaque choix d’équipement influence votre style de jeu et vos chances de survie.</p>
-        </div>
-        <div class="card">
-          <h3>Progression</h3>
-          <p>Améliorez vos compétences, débloquez des talents uniques et façonnez un héros qui évolue selon vos décisions.</p>
-        </div>
+        <button class="carousel-btn right">▶</button>
       </div>
     </section>
 
@@ -117,18 +127,13 @@
     <section class="trailer reveal">
       <h2 class="section-title">🎬 Trailer Officiel</h2>
       <div class="trailer-container">
-        <iframe 
-          src="../assets/video/trailer.mp4" 
-          title="Trailer UnderWorld" 
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
+        <video controls class="trailer-video">
+          <source src="../assets/video/trailer.mp4" type="video/mp4"/>
+          Votre navigateur ne supporte pas la vidéo.
+        </video>
       </div>
     </section>
-
   </main>
-
 
   <footer class="footer">
     <div class="footer-content">
@@ -153,7 +158,22 @@
     };
     window.addEventListener('scroll', onScroll);
     onScroll();
-    document.querySelector('.btop').addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+
+    document.querySelector('.btop').addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    const carousel = document.querySelector('.feature-carousel');
+    const btnLeft = document.querySelector('.carousel-btn.left');
+    const btnRight = document.querySelector('.carousel-btn.right');
+
+    btnLeft.addEventListener('click', () => {
+      carousel.scrollBy({ left: -carousel.clientWidth, behavior: 'smooth' });
+    });
+
+    btnRight.addEventListener('click', () => {
+      carousel.scrollBy({ left: carousel.clientWidth, behavior: 'smooth' });
+    });
   </script>
 </body>
 </html>

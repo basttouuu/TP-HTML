@@ -1,0 +1,88 @@
+
+    body {
+      font-family: Arial, sans-serif;
+      background: #0f0f0f;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #1c1c1c;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 60px;
+    }
+    header .logo {
+      height: 50px;
+    }
+    .community-banner {
+
+      text-align: center;
+      padding: 80px 20px;
+      margin-top: 120px;
+    }
+    .community-banner h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+    .community-banner p {
+      font-size: 1.2rem;
+      opacity: 0.8;
+    }
+    .comment-section {
+      max-width: 700px;
+      margin-top: 60px;
+      margin: 60px auto;
+      padding: 20px;
+      background: #1c1c1c;
+      border-radius: 10px;
+      position: fixed;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
+    .comment-section h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .comment-section input,
+    .comment-section textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      font-size: 14px;
+    }
+    .comment-section button {
+      background-color: #ff5c5c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .comment-section button:hover {
+      background-color: #ff3030;
+    }
+    .commentaire {
+      background: #2c2c2c;
+      padding: 12px;
+      margin-top: 12px;
+      border-radius: 6px;
+    }
+    footer {
+      background: #1c1c1c;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      position: fixed;
+      bottom: 0;
+    }
+    footer img {
+      height: 40px;
+      margin-bottom: 10px;
+    }
