@@ -24,6 +24,6 @@ Le site permet de :
 
 ### 1. Récupérer le projet
 Téléchargez ou clonez le projet dans un dossier local.  
-Ouvrez un terminal (ou Git Bash) dans le dossier où vous souhaitez installer le projet, puis tapez la commande :  
+Ouvrez un Git Bash dans le dossier où vous souhaitez installer le projet, puis tapez la commande :  
 
 git clone https://github.com/ton-compte/chill-games.git
