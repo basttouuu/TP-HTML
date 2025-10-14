@@ -4,7 +4,7 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>CHILL GAMES - Communauté</title>
-  <link rel="stylesheet" href="main.css"/>
+  <link rel="stylesheet" href="../assets/css/maincommu.css"/>
   <link rel="stylesheet" href="../assets/css/sousmenu.css"/>
   <link rel="stylesheet" href="../assets/css/main.css"/>
 </head>
@@ -51,41 +51,33 @@
   </header>
   
   <section class="comment-section">
-  <h2>💬 Vos avis</h2>
+    <h2>💬 Vos avis</h2>
+    <form id="formulaire-commentaire">
+      <input type="text" id="nom" placeholder="Votre nom" required/>
+      <textarea id="message" placeholder="Votre message" required></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <div id="commentaires"></div>
+  </section>
 
-
-  <form id="formulaire-commentaire">
-    <input type="text" id="nom" placeholder="Votre nom" required/>
-    <textarea id="message" placeholder="Votre message" required></textarea>
-    <button type="submit">Envoyer</button>
-  </form>
-
-
-  <div id="commentaires"></div>
-</section>
-
-  <footer class ="footer">
-  <div class="footer-content">
-    
-    <div style="flex:1; min-width:250px; margin-bottom:20px;">
-      <h4>Mentions légales</h4>
-      <p>Responsable de publication : Hugo Paulier</p>
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-txt">
+        <h4>Mentions légales</h4>
+        <p>Responsable de publication : Hugo Paulier</p>
+      </div>
+      <div class="footer-txt">
+        <h4>Contact</h4>
+        <p>Email : hugo.paulier@ynov.com</p>
+        <p>Adresse : 2 Rue de la Fourane, 13090 Aix-en-Provence</p>
+      </div>
+      <div class="footer-txt">
+        <h4>Copyright</h4>
+        <p>&copy; 2025 Chill Games. Tous droits réservés.</p>
+        <p>Design & développement : Hugo Paulier</p>
+      </div>
     </div>
-
-    <div style="flex:1; min-width:250px; margin-bottom:20px;">
-      <h4>Contact</h4>
-      <p>Email : hugo.paulier@ynov.com</p>
-      <p>Adresse : 2 Rue de la Fourane, 13090 Aix-en-Provence</p>
-    </div>
-
-    <div style="flex:1; min-width:250px; margin-bottom:20px;">
-      <h4>Copyright</h4>
-      <p>&copy; 2025 Chill Games. Tous droits réservés.</p>
-      <p>Design & développement : Hugo Paulier</p>
-    </div>
-
-  </div>
   </footer>
-  <script src="code.js"></script>
+  <script src="../assets/js/code.js"></script>
 </body>
 </html>
