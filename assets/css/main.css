@@ -10,7 +10,9 @@
   box-sizing: border-box;
 }
 
-ul li { list-style: none; }
+ul li { 
+  list-style: none; 
+}
 
 a {
   text-decoration: none;
@@ -42,7 +44,10 @@ body {
   z-index: 1000;
 }
 
-.logo { width: 110px; height: auto; }
+.logo { 
+  width: 110px; 
+  height: auto; 
+}
 
 .iconConnection {
   width: 32px; height: 32px;
@@ -50,7 +55,9 @@ body {
   transition: transform 0.3s ease;
 }
 
-.iconConnection:hover { transform: scale(1.1); }
+.iconConnection:hover { 
+  transform: scale(1.1); 
+}
 
 
 .title, .titre, .section-title {
@@ -60,8 +67,14 @@ body {
   color: tomato;
 }
 
-.title, .titre { font-size: 2.2rem; margin: 40px 0 20px; }
-.section-title { font-size: 2.4rem; margin: 40px 0 20px; }
+.title, .titre { 
+  font-size: 2.2rem; 
+  margin: 40px 0 20px; 
+}
+.section-title { 
+  font-size: 2.4rem; 
+  margin: 40px 0 20px; 
+}
 
 .txtintro, .lead {
   text-align: center;
@@ -71,8 +84,14 @@ body {
   line-height: 1.8;
 }
 
-.txtintro { font-size: 1.2rem; padding: 20px; }
-.lead { font-size: 1.3rem; margin-bottom: 40px; }
+.txtintro { 
+  font-size: 1.2rem; 
+  padding: 20px; 
+}
+.lead { 
+  font-size: 1.3rem; 
+  margin-bottom: 40px; 
+}
 
 
 .background, .background1 {
@@ -84,8 +103,12 @@ body {
   overflow: hidden;
 }
 
-.background { background-image: url('../img/imagemenu.png'); }
-.background1 { background-image: url('../img/background1.png'); }
+.background { 
+  background-image: url('../img/imagemenu.png'); 
+}
+.background1 { 
+  background-image: url('../img/background1.png'); 
+}
 
 
 .btop {
@@ -98,8 +121,14 @@ body {
   transition: 0.3s ease, transform 0.3s ease;
 }
 
-.btop:hover { background: tomato; transform: translateY(-4px); }
-.iconArrow { width: 36px; height: 36px; }
+.btop:hover { 
+  background: tomato; 
+  transform: translateY(-4px); 
+}
+.iconArrow { 
+  width: 36px; 
+  height: 36px; 
+}
 
 
 footer {
@@ -124,8 +153,14 @@ footer {
   margin-bottom:20px;
 }
 
-.footer-logo { width: 70px; height: auto; }
-footer p { font-size: 0.95rem; opacity: 0.7; }
+.footer-logo { 
+  width: 70px; 
+  height: auto; 
+}
+footer p { 
+  font-size: 0.95rem; 
+  opacity: 0.7; 
+}
 
 
 .banner {
@@ -169,8 +204,15 @@ footer p { font-size: 0.95rem; opacity: 0.7; }
 }
 
 
-.presentation { padding: 60px 10%; text-align: center; }
-.presentation p { font-size: 1.1rem; color: #ddd; margin-bottom: 20px; line-height: 1.7; }
+.presentation { 
+  padding: 60px 10%; 
+  text-align: center; 
+}
+.presentation p { 
+  font-size: 1.1rem; 
+  color: #ddd; 
+  margin-bottom: 20px; 
+  line-height: 1.7; }
 
 
 .features {
@@ -194,9 +236,20 @@ footer p { font-size: 0.95rem; opacity: 0.7; }
   transition: transform 0.3s ease, 0.3s ease;
 }
 
-.card:hover { transform: translateY(-6px); background: rgba(255,99,71,0.15); }
-.card h3 { color: tomato; margin-bottom: 12px; font-size: 1.4rem; }
-.card p { color: #ccc; font-size: 1rem; line-height: 1.6; }
+.card:hover { 
+  transform: translateY(-6px); 
+  background: rgba(255,99,71,0.15); 
+}
+.card h3 { 
+  color: tomato; 
+  margin-bottom: 12px; 
+  font-size: 1.4rem; 
+}
+.card p { 
+  color: #ccc; 
+  font-size: 1rem; 
+  line-height: 1.6; 
+}
 
 
 .cta-block { text-align: center; padding: 80px 10%; }
@@ -212,7 +265,10 @@ footer p { font-size: 0.95rem; opacity: 0.7; }
   transition: 0.3s ease, transform 0.3s ease;
 }
 
-.btn:hover { background: tomato; transform: translateY(-3px); }
+.btn:hover { 
+  background: tomato; 
+  transform: translateY(-3px); 
+}
 
 .btn.primary {
   background: tomato;
@@ -231,7 +287,10 @@ footer p { font-size: 0.95rem; opacity: 0.7; }
   transition: all 0.8s ease;
 }
 
-.reveal.show { opacity: 1; transform: translateY(0); }
+.reveal.show { 
+  opacity: 1;
+  transform: translateY(0);
+}
 
 
 .trailer-container {
@@ -273,7 +332,9 @@ footer p { font-size: 0.95rem; opacity: 0.7; }
   scroll-behavior: smooth;
 }
 
-.feature-carousel::-webkit-scrollbar { display: none; }
+.feature-carousel::-webkit-scrollbar { 
+  display: none; 
+}
 
 .feature-carousel .card {
   flex: 0 0 80%;
@@ -294,9 +355,16 @@ footer p { font-size: 0.95rem; opacity: 0.7; }
   transition: 0.3s ease;
 }
 
-.carousel-btn:hover { background: tomato; }
-.carousel-btn.left { left: 10px; }
-.carousel-btn.right { right: 10px; }
+.carousel-btn:hover { 
+  background: tomato; 
+  transform: translateY(-50%) scale(1.1); 
+}
+.carousel-btn.left { 
+  left: 10px;
+}
+.carousel-btn.right { 
+  right: 10px; 
+}
 
 
 @media (max-width: 600px) {

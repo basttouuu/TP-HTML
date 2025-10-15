@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('../assets/fonts/Roboto-Regular.ttf');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -12,7 +12,6 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url("../img/background1.png") no-repeat center center/cover;
 }
 
 .wrapper{
@@ -94,7 +93,7 @@ h2{
     font-size: 16px;
     color: #fff;
     padding: 0 5px;
-    background: url("assets\img\background1.png") no-repeat center center/cover;
+    background: url("../img/background1.png") no-repeat center center/cover;
     border: none;
     outline: none;
 }
