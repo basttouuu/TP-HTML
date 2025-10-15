@@ -1,74 +1,74 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN - Chill Games</title>
-    <link rel="stylesheet" href="stylelogin.css">
-    <link rel="stylesheet" href="../assets/css/stylelogin.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LOGIN - Chill Games</title>
+  <link rel="stylesheet" href="../assets/css/stylelogin.css">
 </head>
 <body>
-    <header class="header">
+  <header class="header">
     <div class="left">
-        <a href="../home.html">
-            <img class="logo" src="../assets/icons/logo.png" alt="logo">
-        </a>
+      <a href="../home.html">
+        <img class="logo" src="../assets/icons/logo.png" alt="logo Chill Games">
+      </a>
     </div>
-    </header>
+  </header>
 
+  <div class="wrapper">
 
-    <div class="wrapper">
-        <div class="form-wrapper sign-in">
-            <form action="">
-                <h2>Se Connecter</h2>
-                <div class="input-group">
-                    <input type="text" id="username" name="username" required>
-                    <label for="username">Nom d'utilisateur</label>
-                </div>
-                <div class="input-group">
-                    <input type="password" id="password" name="password" required>
-                    <label for="password">Mot de passe</label>
-                </div>
-                <div class="remember">
-                    <label><input type="checkbox"> Se souvenir de moi</label>
-                </div>
-                <button type="submit"><a href="../home.html">Connexion</button>
-                <div class="sign-link">
-                    <p>Pas encore de compte ? 
-                        <a href="#" class="signUpBtn-link">S'inscrire</a>
-                    </p>
-                </div>
-            </form>
+    <div class="form-wrapper sign-in">
+      <form action="" method="post">
+        <h2>Se Connecter</h2>
+        <div class="input-group">
+          <input type="text" id="username" name="username" required>
+          <label for="username">Nom d'utilisateur</label>
         </div>
-
-        <div class="form-wrapper sign-up">
-            <form action="">
-                <h2>S'inscrire</h2>
-                <div class="input-group">
-                    <input type="text" id="newuser" name="newuser" required>
-                    <label for="newuser">Nom d'utilisateur</label>
-                </div>
-                <div class="input-group">
-                    <input type="email" id="email" name="email" required>
-                    <label for="email">Email</label>
-                </div>
-                <div class="input-group">
-                    <input type="password" id="newpass" name="newpass" required>
-                    <label for="newpass">Mot de passe</label>
-                </div>
-                <div class="remember">
-                    <label><input type="checkbox"> J'accepte les <a href="#">conditions</a></label>
-                </div>
-                <button type="submit">S'inscrire</button>
-                <div class="signUp-link">
-                    <p>Déjà un compte ? 
-                        <a href="#" class="signInBtn-link">Se connecter</a>
-                    </p>
-                </div>
-            </form>
+        <div class="input-group">
+          <input type="password" id="password" name="password" required>
+          <label for="password">Mot de passe</label>
         </div>
+        <div class="remember">
+          <label><input type="checkbox"> Se souvenir de moi</label>
+        </div>
+        <button type="submit"><a href="../home.html">Connexion</a></button>
+        <div class="sign-link">
+          <p>Pas encore de compte ?
+            <a href="#" class="signUpBtn-link">S'inscrire</a>
+          </p>
+        </div>
+      </form>
     </div>
 
-    <script src="../assets/js/scriptlogin.js"></script>
+
+    <div class="form-wrapper sign-up">
+      <form action="" method="post">
+        <h2>S'inscrire</h2>
+        <div class="input-group">
+          <input type="text" id="newuser" name="newuser" required>
+          <label for="newuser">Nom d'utilisateur</label>
+        </div>
+        <div class="input-group">
+          <input type="email" id="email" name="email" required>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-group">
+          <input type="password" id="newpass" name="newpass" required>
+          <label for="newpass">Mot de passe</label>
+        </div>
+        <div class="remember">
+          <label><input type="checkbox" required> J'accepte les <a href="#">conditions</a></label>
+        </div>
+        <button type="submit"><a href="../home.html">S'inscrire</button>
+        <div class="signUp-link">
+          <p>Déjà un compte ?
+            <a href="../home.html" class="signInBtn-link">Se connecter</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../assets/js/scriptlogin.js"></script>
 </body>
 </html>
