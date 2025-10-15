@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="../assets/css/maincommu.css"/>
   <link rel="stylesheet" href="../assets/css/sousmenu.css"/>
   <link rel="stylesheet" href="../assets/css/main.css"/>
+
 </head>
 <body>
   <header class="header">
@@ -52,12 +53,24 @@
   
   <section class="comment-section">
     <h2>💬 Vos avis</h2>
-    <form id="formulaire-commentaire">
-      <input type="text" id="nom" placeholder="Votre nom" required/>
-      <textarea id="message" placeholder="Votre message" required></textarea>
-      <button type="submit">Envoyer</button>
-    </form>
-    <div id="commentaires"></div>
+    <div class="comment-container">
+      
+
+      <div class="comment-form">
+        <h3>Donnez votre avis</h3>
+        <form id="formulaire-commentaire">
+          <input type="text" id="nom" placeholder="Votre nom" required/>
+          <textarea id="message" placeholder="Votre message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+
+
+      <div class="comment-list" id="commentaires">
+        <h3>Derniers avis</h3>
+
+      </div>
+    </div>
   </section>
 
   <footer class="footer">
