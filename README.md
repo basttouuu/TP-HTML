@@ -27,7 +27,7 @@ Le site vitrine te permet de :
 Clone le dépôt avec :  
 
 ```bash
-git clone https://github.com/ton-compte/chill-games.git
+git clone https://github.com/basttouuu/TP-HTML.git
 ```
 
 ### 2. Lancer *UnderWorld*  
